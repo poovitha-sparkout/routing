@@ -1,0 +1,28 @@
+<h1>service</h1>
+<button (click)="datapost()">Add</button>
+<table>
+  <tbody>
+  <tr *ngFor="let item of x">
+    <td> {{ item.userId }} </td>
+    <td>{{ item.title }}</td> 
+  <td>{{ item.id}}</td> 
+<td><button (onClick)="onClick($event)"  routerLink="update">btn</button></td>
+<td><button (click)="delete(item.id)">del</button></td></tr> 
+
+ 
+</tbody>
+</table>
+<router-outlet></router-outlet>
+
+<table>
+  <tbody>
+  <tr *ngFor="let item of res">
+  
+
+ </tbody>
+</table>
+
+
+
+ 
+
