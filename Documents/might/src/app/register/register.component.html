@@ -1,0 +1,10 @@
+<form [formGroup]="userForm" (ngSubmit)="registerUser()">
+ 
+    <input type="text" ng-model="user.name" placeholder="Name" required />
+    <input type="email" ng-model="user.email" placeholder="Email" required />
+    <input type="tel" ng-model="user.phone" placeholder="Phone Number" required />
+    <input type="password" ng-model="user.password" placeholder="Password" required />
+    <!-- You may also need to add a file input for KYC documents -->
+    <button type="submit">Register</button>
+  </form>
+
